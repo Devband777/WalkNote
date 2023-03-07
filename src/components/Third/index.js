@@ -40,7 +40,7 @@ function Third() {
       </div>
       <div className='third-right'>
         <div className='third-right-back'>
-          <video src={thirdVideo} controls/>
+          <video src={thirdVideo} controls autoPlay={true} muted/>
         </div>
       </div>
     </div>

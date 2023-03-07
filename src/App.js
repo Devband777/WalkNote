@@ -13,7 +13,6 @@ import Nineth from './components/Nineth';
 import Tenth from './components/Tenth';
 import { Routes, Route } from 'react-router-dom';
 
-
 import { useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
 
@@ -24,24 +23,30 @@ function App(props) {
 
   useEffect(() => {
     localStorage.setItem('index', 1);
-  }, [])
-
-  useEffect(() => {
-    window.addEventListener('keyup', e => {
-      
+    const handleKeyUp = e => {
       let counter = Number(localStorage.getItem('index'));
-      console.log(counter)
+      console.log(e.key)
       if(e.key === 'ArrowRight'){
-        if(counter < 9)
+        if(counter < 9) {
+          console.log('11111111111111')
           localStorage.setItem('index', counter+1);
+          navigate(`/${counter+1}`)
+        }
       }
       if(e.key === 'ArrowLeft'){
-        if(counter > 1)
-          localStorage.setItem('index', counter-1);
-       }
-     }) 
+          if(counter > 1) {
+            localStorage.setItem('index', counter-1);
+            navigate(`/${counter-1}`)
+          }
+        }
+      }
+
+      window.addEventListener('keydown', handleKeyUp) 
      
-  })
+      return () => {
+        window.removeEventListener('keydown', handleKeyUp)
+      }
+  }, [])
 
   return (
     <div className="App">

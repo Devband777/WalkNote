@@ -33,8 +33,8 @@ function First() {
         <div className='first-right-back'>
           <img src={topImg} className="top">
           </img>
-
-          <video src={firstVideo} autoPlay={false} controls loop muted />
+          
+          <video src={firstVideo} autoPlay={true} controls loop muted />
         </div>
         <img src={bottomImg} className="bottom" />
       </div>
