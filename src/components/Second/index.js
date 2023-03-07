@@ -26,10 +26,10 @@ function Second() {
                In traditional gaming all hours, effort and money invested by the player is locked in one experience and can't be utilized after the plaer leaves the game.
             </li>
             <li>
-            - Players are not able to bring their digital identity across games and are stuck in a silos where they dont own or control anything.
+             Players are not able to bring their digital identity across games and are stuck in a silos where they dont own or control anything.
             </li>
             <li>
-            - Blockchain gaming has bbeen met with skepticism by players and game developers alike and is struggling to break into the $255B video game market.
+             Blockchain gaming has bbeen met with skepticism by players and game developers alike and is struggling to break into the $255B video game market.
             </li>
           </ul>
         </div>

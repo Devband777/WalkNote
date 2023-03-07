@@ -4,6 +4,7 @@ import logoImg from '../../assets/Walker_World_White.png'
 import avartar1 from '../../assets/avartar1.jpg'
 import avartar2 from '../../assets/avartar2.jpg'
 import avartar3 from '../../assets/avartar3.jpg'
+import backVideo from '../../assets/back.mp4'
 function fifth() {
   return (
     <div>
