@@ -1,0 +1,33 @@
+$primary_1: linear-gradient(to bottom, #182a3d 100%, #181c20 0%);
+$primary_2: #b2ad7f;
+$leftWidth: 35%;
+$rightWidth: 65%;
+
+.leftPane {
+  width: $leftWidth;
+  height: 100%;
+  float: left;
+  background: $primary_1;
+}
+
+.rightPane {
+  width: $rightWidth;
+  height: auto;
+  float: left;
+}
+
+.eight_img {
+  height: 90%;
+}
+
+.leftSide {
+  position: absolute;
+  width: 1%;
+}
+
+.markImage {
+  width: 40%;
+  margin-left: 20%;
+  margin-top: 30%;
+  float: left;
+}

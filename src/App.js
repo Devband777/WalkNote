@@ -10,14 +10,14 @@ import Sixth from './components/Sixth';
 import Seventh from './components/Seventh';
 import Eighth from './components/Eighth';
 import Nineth from './components/Nineth';
-import Ten from './components/Ten';
+import Tenth from './components/Tenth';
 
 import { useEffect, useState } from 'react';
 
 import './App.scss';
 
 function App(props) {
-  let [counter, setCounter] = useState(8);
+  let [counter, setCounter] = useState(10);
   
   useEffect(() => {
     window.addEventListener('keydown', e => {
@@ -61,7 +61,7 @@ function App(props) {
           counter === 9 && <Nineth />
         }
         {
-          counter === 10 && <Ten />
+          counter === 10 && <Tenth />
         }
       </div>
     </div>

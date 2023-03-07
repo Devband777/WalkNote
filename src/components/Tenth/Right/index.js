@@ -1,5 +1,5 @@
 import React from "react";
-import imgp from "../../../assets/8_right.jpeg";
+import imgp from "../../../assets/10_right.jpeg";
 import "../style.scss"
 
 
