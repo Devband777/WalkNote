@@ -17,7 +17,7 @@ import { useEffect, useState } from 'react';
 import './App.scss';
 
 function App(props) {
-  let [counter, setCounter] = useState(10);
+  let [counter, setCounter] = useState(2);
   
   useEffect(() => {
     window.addEventListener('keydown', e => {

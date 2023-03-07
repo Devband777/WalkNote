@@ -1,17 +1,17 @@
-.first {
+.second {
     min-height: -webkit-fill-available;
     max-height: -webkit-fill-available;
     position: relative;
     display: flex;
 
-    img.first-bar {
+    img.second-bar {
         position: absolute;
         height: 100%;
         width: 0.8vw;
     }
 
     &-left {
-        flex: 33.33%;
+        flex: 50%;
         background: linear-gradient(#182a3f, 
         #181c20);
         display: flex;
@@ -20,24 +20,25 @@
         padding: 5%;
         box-sizing: border-box;
 
-        img.first-logo {
+        img.second-logo {
             width: 12vw;
-            margin-bottom: 40%;
+            margin-bottom: 15%;
         }
 
         &-top-bar {
             width: 5vw;
             height: 0.8vw;
             background: #00dcce;
+            margin-bottom: 1vw;
         }
 
-        .first-title {
+        .second-title {
             color: white;
             font-size: 5vw;
             font-family: 'Nominee-Bold';
         }
 
-        .first-desc {
+        .second-desc {
             color: white;
             font-size: 1.6vw;
             font-family: 'Nominee-Light';
@@ -47,52 +48,17 @@
             width: 5vw;
             height: 0.3vw;
             background: #00dcce;
-            margin-top: 10%;
+            margin-top: 5%;
         }
     }
 
     &-right {
-        flex: 66.66%;
-        position: relative;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-end;
-
-        video {
-            position: absolute;
-            height: 100%;
-            left: 0;
-        }
-
+        flex: 50%;
         &-back {
-            position: relative;
-            width: 90%;
-            margin-bottom: -0.5vw;
-            
-            img.top {
-                position: absolute;
-                z-index: 2;
-                left: 0;
-                bottom: 0;
-            }
-
-            video {
-                position: absolute;
-                z-index: 1;
-                left: 0;
-                bottom: 1vw;
-                width: 100%;
+            img {
                 height: auto;
+                width: 100%;            
             }
-        }
-
-        img.bottom {
-            height: 10vw;
-            width: 70%;
-            position: relative;
-            display: inline-block;
         }
     }
 }
