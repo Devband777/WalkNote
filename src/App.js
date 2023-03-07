@@ -14,8 +14,10 @@ import Ten from './components/Ten';
 
 import { useEffect, useState } from 'react';
 
+import './App.scss';
+
 function App(props) {
-  let [counter, setCounter] = useState(1);
+  let [counter, setCounter] = useState(8);
   
   useEffect(() => {
     window.addEventListener('keydown', e => {
