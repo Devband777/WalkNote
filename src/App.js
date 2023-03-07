@@ -11,61 +11,55 @@ import Seventh from './components/Seventh';
 import Eighth from './components/Eighth';
 import Nineth from './components/Nineth';
 import Tenth from './components/Tenth';
+import { Routes, Route } from 'react-router-dom';
+
 
 import { useEffect, useState } from 'react';
+import { useNavigate } from "react-router-dom";
 
 import './App.scss';
 
 function App(props) {
-  let [counter, setCounter] = useState(0);
-  
-  useEffect(() => {
-    window.addEventListener('keydown', e => {
+  const navigate = useNavigate();
 
+  useEffect(() => {
+    localStorage.setItem('index', 1);
+  }, [])
+
+  useEffect(() => {
+    window.addEventListener('keyup', e => {
+      
+      let counter = Number(localStorage.getItem('index'));
+      console.log(counter)
       if(e.key === 'ArrowRight'){
-        if(counter === 9) return;
-       setCounter(counter + 1)
+        if(counter < 9)
+          localStorage.setItem('index', counter+1);
       }
       if(e.key === 'ArrowLeft'){
-        if(counter === 0) return;
-        setCounter(counter - 1)
+        if(counter > 1)
+          localStorage.setItem('index', counter-1);
        }
-     })    
+     }) 
+     
   })
 
   return (
     <div className="App">
       <div className="container">
-        {
-          counter === 0 && <First />
-        }
-        {
-          counter === 1 && <Second />
-        }
-        {
-          counter === 2 && <Third />
-        }
-        {
-          counter === 3 && <Fourth />
-        }
-        {
-          counter === 4 && <Fifth />
-        }
-        {
-          counter === 5 && <Sixth />
-        }
-        {
-          counter === 6 && <Seventh />
-        }
-        {
-          counter === 7 && <Eighth />
-        }
-        {
-          counter === 8 && <Nineth />
-        }
-        {
-          counter === 9 && <Tenth />
-        }
+        <Routes>
+          <Route path="/1" element={<First />} />
+          <Route path="/2" element={<Second />} />
+          <Route path="/3" element={<Third />} />
+          <Route path="/4" element={<Fourth />} />
+          <Route path="/5" element={<Fifth />} />
+          <Route path="/6" element={<Sixth />} />
+          <Route path="/7" element={<Seventh />} />
+          <Route path="/8" element={<Eighth />} />
+          <Route path="/9" element={<Nineth />} />
+          <Route path="/10" element={<Tenth />} />
+          <Route path="*" element={<First />} />
+        </Routes>
+
       </div>
     </div>
   );
