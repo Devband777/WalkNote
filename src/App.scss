@@ -3,6 +3,7 @@
   min-height: 100vh;
   background-color: black;
   position: relative;
+  font-family: 'Nominee-Thin';
 
   .container {
     position: absolute;
@@ -20,4 +21,34 @@
       height: auto;
     }
   }
+}
+
+@font-face {
+  font-family: "Nominee_Black";   /*Can be any text*/
+  src: local("Nominee-Black"),
+    url("./assets/fonts/Nominee-Black.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Nominee-Bold";   /*Can be any text*/
+  src: local("Nominee-Bold"),
+    url("./assets/fonts/Nominee-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Nominee_Light";   /*Can be any text*/
+  src: local("Nominee-Light"),
+    url("./assets/fonts/Nominee-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Nominee_Medium";   /*Can be any text*/
+  src: local("Nominee-Medium"),
+    url("./assets/fonts/Nominee-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Nominee_Thin";   /*Can be any text*/
+  src: local("Nominee-Thin"),
+    url("./assets/fonts/Nominee-Thin.otf") format("opentype");
 }

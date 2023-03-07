@@ -1,0 +1,98 @@
+.first {
+    min-height: -webkit-fill-available;
+    max-height: -webkit-fill-available;
+    position: relative;
+    display: flex;
+
+    img.first-bar {
+        position: absolute;
+        height: 100%;
+        width: 0.8vw;
+    }
+
+    &-left {
+        flex: 33.33%;
+        background: linear-gradient(#182a3f, 
+        #181c20);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5%;
+        box-sizing: border-box;
+
+        img.first-logo {
+            width: 12vw;
+            margin-bottom: 40%;
+        }
+
+        &-top-bar {
+            width: 5vw;
+            height: 0.8vw;
+            background: #00dcce;
+        }
+
+        .first-title {
+            color: white;
+            font-size: 5vw;
+            font-family: 'Nominee-Bold';
+        }
+
+        .first-desc {
+            color: white;
+            font-size: 1.6vw;
+            font-family: 'Nominee-Light';
+        }
+
+        &-bottom-bar {
+            width: 5vw;
+            height: 0.3vw;
+            background: #00dcce;
+            margin-top: 10%;
+        }
+    }
+
+    &-right {
+        flex: 66.66%;
+        position: relative;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+
+        video {
+            position: absolute;
+            height: 100%;
+            left: 0;
+        }
+
+        &-back {
+            position: relative;
+            width: 90%;
+            margin-bottom: -0.5vw;
+            
+            img.top {
+                position: absolute;
+                z-index: 2;
+                left: 0;
+                bottom: 0;
+            }
+
+            video {
+                position: absolute;
+                z-index: 1;
+                left: 0;
+                bottom: 1vw;
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        img.bottom {
+            height: 10vw;
+            width: 70%;
+            position: relative;
+            display: inline-block;
+        }
+    }
+}
