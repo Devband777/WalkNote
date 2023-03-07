@@ -34,7 +34,7 @@ function App(props) {
     <div className="App">
       <div className="container">
         {
-          counter === 1 && <First />
+          counter === 4 && <First />
         }
         {
           counter === 2 && <Second />
@@ -43,7 +43,7 @@ function App(props) {
           counter === 3 && <Third />
         }
         {
-          counter === 4 && <Fourth />
+          counter === 1 && <Fourth />
         }
         {
           counter === 5 && <Fifth />

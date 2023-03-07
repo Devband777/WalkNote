@@ -52,3 +52,16 @@
   src: local("Nominee-Thin"),
     url("./assets/fonts/Nominee-Thin.otf") format("opentype");
 }
+.fourth_layer1{
+  height:100%;
+  width:100%;
+  background-color:#182a3f;
+  background-image:linear-gradient(#182a3f,#181c20);
+}
+.fourth_col-md-3 {
+  flex: 0 0 auto;
+  width: 25%;
+}
+.fourth_import{
+  opacity: 1 !important;
+}
