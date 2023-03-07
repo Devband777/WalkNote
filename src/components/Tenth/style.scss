@@ -1,33 +1,70 @@
-$primary_1: linear-gradient(to bottom, #182a3d 100%, #181c20 0%);
-$primary_2: #b2ad7f;
-$leftWidth: 35%;
-$rightWidth: 65%;
+.tenth {
+  min-height: -webkit-fill-available;
+  max-height: -webkit-fill-available;
+  position: relative;
+  display: flex;
 
-.leftPane {
-  width: $leftWidth;
-  height: 100%;
-  float: left;
-  background: $primary_1;
-}
+  img.tenth-bar {
+    position: absolute;
+    height: 100%;
+    width: 0.8vw;
+  }
 
-.rightPane {
-  width: $rightWidth;
-  height: auto;
-  float: left;
-}
+  &-left {
+    flex: 35%;
+    background: linear-gradient(#182a3f, #181c20);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    box-sizing: border-box;
 
-.eight_img {
-  height: 90%;
-}
+    img.tenth-logo {
+      width: 12vw;
+      margin-bottom: 15%;
+    }
 
-.leftSide {
-  position: absolute;
-  width: 1%;
-}
+    &-top-bar {
+      width: 5vw;
+      height: 0.8vw;
+      background: #00dcce;
+      margin-bottom: 1vw;
+    }
 
-.markImage {
-  width: 40%;
-  margin-left: 20%;
-  margin-top: 30%;
-  float: left;
+    .tenth-title {
+      color: white;
+      font-size: 3.5vw;
+      font-family: "Nominee-Bold";
+    }
+
+    .tenth-desc {
+      color: white;
+      font-size: 1.6vw;
+      font-family: "Nominee-Light";
+    }
+
+    &-bottom-bar {
+      width: 5vw;
+      height: 0.3vw;
+      background: #00dcce;
+      margin-top: 5%;
+    }
+
+    .tenth-pillar {
+      margin-bottom: 2vw;
+      color: white;
+      font-size: 1.8vw;
+      font-family: "Nominee-Light";
+    }
+  }
+
+  &-right {
+    flex: 66%;
+    &-back {
+      img {
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
 }

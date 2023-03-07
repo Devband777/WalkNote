@@ -9,9 +9,9 @@ import firstVideo from '../../assets/first.mp4'
 function First() {
   return (
     <div className='first'>
-      <img src={barImg} className="first-bar"/>
+      <img src={barImg} className="first-bar" />
       <div className='first-left'>
-        <img src={logoImg} className="first-logo"/>
+        <img src={logoImg} className="first-logo" />
         <div className='first-left-top-bar'>
 
         </div>
@@ -33,7 +33,7 @@ function First() {
         <div className='first-right-back'>
           <img src={topImg} className="top">
           </img>
-          
+
           <video src={firstVideo} autoPlay={false} controls loop muted />
         </div>
         <img src={bottomImg} className="bottom" />
